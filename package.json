@@ -1,0 +1,47 @@
+{
+  "name": "extensions-site",
+  "version": "1.0.0",
+  "description": "Webpage source files for Chrome extensions developed by Saw-mon and Natalie",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
+    "export": "next export && touch out/.nojekyll",
+    "clean-build": "rimraf \".next\"",
+    "clean-export": "rimraf \"out\"",
+    "clean": "npm run clean-build && npm run clean-export",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saw-mon-and-Natalie/extensions-site.git"
+  },
+  "keywords": [
+    "Saw-mon and Natalie",
+    "Next.js",
+    "Chrome Extensions",
+    "React",
+    "tailwind"
+  ],
+  "author": "Saw-mon and Natalie",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Saw-mon-and-Natalie/extensions-site/issues"
+  },
+  "homepage": "https://github.com/Saw-mon-and-Natalie/extensions-site#readme",
+  "dependencies": {
+    "framer": "^1.2.9",
+    "framer-motion": "^2.9.4",
+    "next": "^10.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "postcss": "^8.1.7",
+    "postcss-flexbugs-fixes": "^5.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.9.6"
+  }
+}

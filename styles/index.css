@@ -1,0 +1,33 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+body {
+    @apply bg-gray-100;
+}
+
+@layer base {
+    p {
+        @apply my-5;
+    }
+
+    a {
+        @apply text-blue-500;
+    }
+
+    a:hover {
+        @apply text-blue-600;
+    }
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop Purgin. */
+
+/* Write your own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
